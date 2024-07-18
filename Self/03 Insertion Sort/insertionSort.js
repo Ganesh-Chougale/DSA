@@ -1,4 +1,5 @@
 let myArr = [23, 1, 10, 5, 2];
+// compares one element previous elements & shift that element between it
 
 function insertionSort(arr) {
     for(let i = 1; i<arr.length; i++){

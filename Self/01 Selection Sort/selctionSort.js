@@ -1,4 +1,5 @@
 let myArr = [98, 12, 87, 23, 76, 34, 65, 56];
+// compares one element with all remaining elements
 
 let selectionSort = (arr) => {
   for (let i = 0; i < arr.length; i++) {

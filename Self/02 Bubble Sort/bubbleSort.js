@@ -1,4 +1,6 @@
 let myArr = [98,12,87,23,76,34,65,56];
+// compares one element only with next element to it (Adjecent)
+
 
 let bubbleSort = (arr) => {
     let swapped;
