@@ -1,11 +1,13 @@
-function countdown(num) {
-    if (num === 0) { 
-      console.log("Recusrion Ends");
-    } else {
-      console.log(num);
-      countdown(num - 1);
-    }
+let factorial = (num)=>{
+  if(num<2){
+    return num;
+    // console.log("if : ", num);
   }
-  
-  countdown(5);
-  
+  else{
+   return num * factorial(num-1);
+    // console.log("else : ", num);
+  }
+}
+console.log('start');
+console.log(factorial(6));
+console.log('end');
