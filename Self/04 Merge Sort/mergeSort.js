@@ -19,18 +19,37 @@ function inValCut(arr){
         return firstVal;
 }
 
+// Spread Operator
+function SpreadOperator(arr1, arr2, arr3){
+    let index = 0;
+    let finalArr = []
+    
+    for(let i = 0; i<arr1.length; i++){
+      finalArr[index] = arr1[i]
+      index++;
+    }
+      for(let i = 0; i<arr2.length; i++){
+      finalArr[index] = arr2[i]
+      index++
+    }
+    for(let i = 0; i<arr3.length; i++){
+      finalArr[index] = arr3[i]
+      index++;
+    }
+    return finalArr;
+  }
+
 function mergeSort(arr){
     
     if(arr.length<2){
-        return num
+        return arr;
     }
     const mid = Math.floor(arr.length/2);
-    //splice Starts
+
     const leftArr = [];
     for(let i = 0; i<mid; i++){
         leftArr[i] = arr[i]
     }
-    console.log("left Array :",leftArr);
     
     const rightArr = [];
     let j = 0; // need new index because [i] will continue old index
@@ -38,8 +57,7 @@ function mergeSort(arr){
         rightArr[j] = arr[i];
         j++;
     }
-    console.log("right Array :",rightArr);
-    // splice Ends
+
 
     merge(mergeSort(leftArr), mergeSort(rightArr)); // recursive part
     
@@ -53,6 +71,7 @@ function mergeSort(arr){
                 pusher(sortedArr, inValCut(rightArr));
             }
         }
+        SpreadOperator(sortedArr, leftArr, rightArr);
     }
 }
 

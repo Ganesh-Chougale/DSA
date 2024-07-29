@@ -1,4 +1,4 @@
-let myArr = [9,0,8,1,7,2,6,3,6,5,4];    
+let myArr = [9,0,8,1,7,2,6,3,5,4];    
 
 function mergeSort(arr){
     if(arr.length<2){
