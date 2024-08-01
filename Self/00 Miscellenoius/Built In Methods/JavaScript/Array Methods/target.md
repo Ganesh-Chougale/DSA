@@ -1,7 +1,6 @@
 _Pending_
 Array length
 Array toString()
-Array at()
 Array join()
 Array delete()
 Array concat()
@@ -17,3 +16,4 @@ Array shift()
 Array pop()
 Array unshift()
 Array slice()
+Array at()
